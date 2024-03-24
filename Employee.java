@@ -21,8 +21,7 @@ class Main {
         Scanner in = new Scanner(System.in);
         System.out.println("Enter the number of Employees : ");
         int n = in.nextInt();
-        in.nextLine(); // consume the newline character
-
+        in.nextLine();
         Details[] emp = new Details[n];
 
         int no = 0;
@@ -32,7 +31,7 @@ class Main {
         for (int i = 0; i < n; ++i) {
             System.out.print("Enter the employee number : ");
             no = in.nextInt();
-            in.nextLine(); // consume the newline character
+            in.nextLine();
             System.out.print("Enter the employee name : ");
             name = in.nextLine();
             System.out.print("Enter the employee salary : ");
