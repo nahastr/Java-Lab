@@ -2,10 +2,10 @@ import java.util.Scanner;
 
 class Person 
 {
-	String name = null;
-	String gender = null;
-	String address = null;
-	int age = null;
+	String name;
+	String gender;
+	String address;
+	int age;
 
 	Person(String name, String gender, String address, int age)
 	{
@@ -18,10 +18,10 @@ class Person
 
 class Employee extends Person
 {
-	int emid = null;
-	String company_name = null;
-	String qualification = null;
-	int salary = null;
+	int emid;
+	String company_name;
+	String qualification;
+	int salary;
 	
 	Employee(String name, String gender, String address, int age, int emid, String company_name, String qualification, int salary)
 	{
@@ -35,9 +35,9 @@ class Employee extends Person
 
 class Teacher extends Employee
 {
-	String subject = null;
-	String department = null;
-	int teacherid = null;
+	String subject;
+	String department;
+	int teacherid;
 	
 	Teacher(String name, String gender, String address, int age, int emid, String company_name, String qualification, int salary ,String subject, String department, int teacherid)
 	{
@@ -54,12 +54,12 @@ class Teacher extends Employee
 		System.out.println(address);
 		System.out.println(age);
 		System.out.println(emid);
-		System.out.println();
-		System.out.println();
-		System.out.println();
-		System.out.println();
-		System.out.println();
-		System.out.println();
+		System.out.println(company_name);
+		System.out.println(qualification);
+		System.out.println(salary);
+		System.out.println(subject);
+		System.out.println(department);
+		System.out.println(teacherid);
 	}
 }
 
@@ -78,8 +78,12 @@ class Inheritance
 		{
 			System.out.println("Enter the employee id :");		
 		}*/
-		Teacher[] t = new Teacher[n];
-		t[0] = new Teacher("Nahas", "Male", "jkl Road",24 ,100, "ABC", "MCA" 20000, "java", "C S", 1000);
-		t[1] = new Teacher("Lijith", "Male", "Enaty",22 , 103, "ABC", "B-tech" 25000, "C++", "C S", 1005);
+		Teacher[] t = new Teacher[2];
+		
+		t[0] = new Teacher("Nahas", "Male", "jkl Road",24 ,100, "ABC", "MCA", 20000, "java", "C S", 1000);
+		t[1] = new Teacher("Lijith", "Male", "Enaty",22 , 103, "ABC", "B-tech", 25000, "C++", "C S", 1005);
+		
+		t[0].display();
+		
 	}
 }
