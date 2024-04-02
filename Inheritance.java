@@ -49,17 +49,17 @@ class Teacher extends Employee
 	
 	void display()
 	{
-		System.out.println(name);
-		System.out.println(gender);
-		System.out.println(address);
-		System.out.println(age);
-		System.out.println(emid);
-		System.out.println(company_name);
-		System.out.println(qualification);
-		System.out.println(salary);
-		System.out.println(subject);
-		System.out.println(department);
-		System.out.println(teacherid);
+		System.out.println("Name : "+ name);
+		System.out.println("Gender : "+gender);
+		System.out.println("Adderss : "+address);
+		System.out.println("Age : "+age);
+		System.out.println("Emid : "+emid);
+		System.out.println("Company Name : "+company_name);
+		System.out.println("Qualification : "+qualification);
+		System.out.println("Salary : "+salary);
+		System.out.println("Subject : "+subject);
+		System.out.println("Department : "+department);
+		System.out.println("Teacher id "+teacherid + "\n");
 	}
 }
 
@@ -80,10 +80,11 @@ class Inheritance
 		}*/
 		Teacher[] t = new Teacher[2];
 		
-		t[0] = new Teacher("Nahas", "Male", "jkl Road",24 ,100, "ABC", "MCA", 20000, "java", "C S", 1000);
-		t[1] = new Teacher("Lijith", "Male", "Enaty",22 , 103, "ABC", "B-tech", 25000, "C++", "C S", 1005);
+		t[0] = new Teacher("Nahas", "Male", "jkl Road",23 ,100, "ABC", "MCA", 20000, "java", "C S", 1000);
+		t[1] = new Teacher("Lijith", "Male", "Enaty",23 , 103, "ABC", "B-tech", 25000, "C++", "C S", 1005);
 		
 		t[0].display();
+		t[1].display();
 		
 	}
 }
